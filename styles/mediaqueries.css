@@ -1,0 +1,18 @@
+@media (min-width: 600px){
+    .comida__cta {
+        background-color: #1970ae;
+        color: #fff;
+        border: none;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 0;
+        padding: .5em 0;
+        border-radius: .5em;
+        margin-top: 1em;
+        margin-bottom: .7em;
+        cursor: pointer;
+        font-size: .7rem;
+    }
+}

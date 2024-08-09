@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font--poppins: "Poppins", sans-serif;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font--poppins);
+    font-size: .9rem;
+    background-color: #e6e6e6;
+}
+
+.header {
+    min-height: 250px;
+    width: 100%;
+    background-image: url(../assets/imagenes/fondo.webp);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+}
+.header__logo{
+    width: 130px;
+}
+.header__title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    gap: .5em;
+    background-color: #000000b2;
+    padding: .3em 0;
+}
+.title__span{
+    font-size: 1rem;
+    padding: 0 1em;
+    line-height: 1.5;
+}
+
+/* ////////////////// MAIN ////////////////////// */
+
+/* /////////////// TUTORIAL //////////////////////// */
+
+.tutorial__btn{
+    display: flex;
+    border: none;
+    background-color: #012d5b;
+    color: #fff;
+    text-align: center;
+    margin: 1em auto;
+    padding: 1em 4em;
+    border-radius: 1em;
+
+}
+.tutorial__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1000;
+}
+
+.tutorial__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.tutorial__content img {
+    max-width: 95vw;
+    max-height: 530px;
+    object-fit: contain;
+}
+
+.tutorial__close-btn {
+    position: absolute;
+    top: -2.5em;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #bc1010;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+
+/* ///////////////// CATEGORIAS ///////////////////////// */
+
+.categoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: clamp(100px, 90%, 600px);
+    margin: 0 auto;
+    gap: 1em;
+}
+
+.categorias__title {
+    display: flex;
+    justify-content: center;
+    width: clamp(100px, 80%, 350px);
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1em auto 2em;
+    position: relative;
+}
+
+.categorias__title::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -.5em;
+    left: 0;
+    background-color: #005aae;
+    animation: underline-animation 2s ease forwards infinite;
+}
+
+@keyframes underline-animation {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+
+
+
+.categorias__button {
+    flex-basis: 130px;
+    max-width: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding:  0;
+    border-radius: .5em;
+    background-color: #0094e4;
+    color: #fff;
+    height: 90px;
+    cursor: pointer;
+}
+
+.categorias__img {
+    width: 50px;
+    margin-bottom: .5em;
+}
+
+/* /////////////////// COMIDAS //////////////////////////// */
+
+
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: clamp(100px, 90%, 1000px);
+
+}
+.comida{
+    background-color: #bbd7ee;
+    flex-basis: 150px;
+    max-width: 200px;
+    flex-grow: 1;
+
+    border-radius: 1em;
+    padding: .5em 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.comida__name {
+    color: #2a2a2a;
+    margin: .5em 0 0 0;
+    width: 80%;
+    padding: .5em 0;
+    margin: 0 auto;
+    border-radius: .5em;
+    font-size: .9rem;
+    margin: 0 auto;
+    font-weight: 600;
+    height: 2.5em;
+    line-height: 1.2;
+
+}
+.comida__precio {
+    margin: .7em 0 .5em 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.comida__img{
+    width: 100%;
+}
+.comida__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.camida__pedido{
+    margin: .2em auto .5em;
+}
+.comidas__inputNumber {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+
+.comida__cta {
+    background-color: #1970ae;
+    color: #fff;
+    border: none;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    padding: .5em 0;
+    border-radius: .5em;
+    margin-top: 1em;
+    margin-bottom: .7em;
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+.comida__btn {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.comidas__inputNumber {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border-radius: .2em;
+    border: none;
+}
+
+.ver-mas-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ver-mas-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* ////////////// carrito //////////////////////// */
+
+
+.carrito {
+    width: clamp(100px, 70%, 300px);
+    padding: 1em 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #903232;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    position: -webkit-sticky; /* Para navegadores basados en WebKit (Safari) */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    border: none;
+    border-radius: .5em;
+    animation: verticalMove 2s ease-in-out infinite;
+}
+
+@keyframes verticalMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.carrito__icon {
+    width: 1.5em;
+    margin-left: .5em;
+    animation: carro 3000ms infinite;
+}
+
+@keyframes carro {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* /////////////////////// LISTA DE PEDIDO /////////////////////// */
+
+
+.pedido {
+    background-color: #006297;
+    text-align: center;
+    color: #fff;
+    padding: 3em 0;
+    margin: 5em auto;
+    position: fixed;
+    width: 90%;
+    height: 60vh;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+
+}
+
+.pedido.mostrar {
+    transform: translate(-50%, -50%) scale(1); /* Despliegue animado */
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: #9d0c0c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 900;
+    border-radius: .5em;
+    transition: background-color 200ms;
+}
+.cerrar:hover{
+    background-color: #ff0000;
+}
+
+.line {
+    height: 2px;
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto 1em;
+}
+
+.pedido__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.pedido_labels{
+    font-weight: 500;
+    color: #ffffff;
+}
+.quitar__pedido {
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #903232;
+    padding: 0.5em 3em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-top: .5em;
+}
+
+.pedido__confirmar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #012d5b;
+    border: none;
+    color: #fff;
+    width: clamp(100px, 50%, 400px);
+    padding: .7em 0;
+    margin: 0 auto;
+    border-radius: .5em;
+    cursor: pointer
+}
+
+.pedido__icon{
+    width: 15px;
+}
+
+.delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto 1em;
+    border-radius: .5em;
+    border: none;
+    padding: .5em 0;
+}
+
+
+.pedido__icon{
+    width: 10px;
+    margin-right: 1em;
+    display: inline-block; /* Asegura que el ícono se comporte como un bloque en línea para la animación */
+    animation: bounce 1s infinite; /* Aplica la animación de rebote */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Cambia el valor para ajustar la distancia del rebote */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.house{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 1em  auto;
+    border-radius: .5em;
+    border: none;
+    padding: .5em 0;
+}
+
+/* //////////// BOTONES ///////////////// */
+
+
+.inputs__confirmacion {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #0f5499; /* Ejemplo de color de fondo */
+    padding: 0; /* Ajusta el padding según sea necesario */
+    border-radius: 1em;
+}
+
+.inputs__confirmacion.activo {
+    max-height: 500px; /* Ajusta este valor según el contenido */
+    padding: 1em; /* Ajusta el padding según sea necesario */
+    width: 90%;
+}
+
+
+
+
+/* /////////////////////// LIGHTBOX ///////////////////////////// */
+
+.mensaje__popup {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #062a47;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.mensaje__emergente {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mensaje__detalle {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.mensaje__popup.show {
+    display: block;
+    /* Mostrar cuando tiene la clase 'show' */
+    opacity: 1;
+}
+
+.arrow {
+    position: relative;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+    margin: 0 auto;
+    /* Centrar el contenedor de la flecha */
+}
+
+/* /////////////////// WHATSAPP ///////////////////////// */
+
+
+
+.confirmacion__title {
+    margin-top: 3em;
+    animation: titulo 2000ms ease infinite;
+}
+
+@keyframes titulo {
+    10% {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    20% {
+        transform: scale(1.05) rotate(-5deg);
+    }
+
+    30% {
+        transform: scale(1.05) rotate(5deg);
+    }
+
+    40% {
+        transform: none;
+    }
+}
+
+
+
+
+.input__text {
+    border: none;
+    padding: .5em .5em ;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    margin-top: .3em;
+    width: 95%;
+    color: #000000df;
+    background-color: #ffffff;
+
+}
+
+.confirmacion__label {
+    color: #ffffff;
+}
+
+.input__text3 {
+    width: 20%;
+    text-align: center;
+}
+
+.pedido__enviar {
+    border: none;
+    background-color: #012d5b;
+    color: #fff;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+.pedido__enviar2 {
+    border: none;
+    background-color: #012d5b;
+    color: #fff;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+/* ----------------- segundo boton ------------------ */
+
+
+/* Inicialmente ocultar el contenedor */
+.retiroLOCAL {
+    max-height: 0; /* Ocultar el contenedor con altura 0 */
+    opacity: 0; /* Hacerlo transparente al inicio */
+    overflow: hidden; /* Ocultar el contenido que desborda */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transición de altura y opacidad */
+}
+
+/* Mostrar el contenedor cuando sea visible */
+.retiroLOCAL.visible {
+    max-height: 200px; /* Ajusta según el tamaño del contenido */
+    opacity: 1; /* Hacerlo visible */
+}
+
+
+/* --------------- botones de pedido -------------------- */
+
+
+
+
+/* //////////////// VENTANA EMERGENTE ///////////////////////// */
+
+.nuevo-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 29, 73);
+    /* Fondo semitransparente */
+    z-index: 9999;
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #5194be;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.cerrar-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #ffffff;
+    /* Color del ícono */
+    background-color: #903232;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.cerrar-lightbox:hover {
+    color: #333;
+}
+
+
+
+/* /////////////////MAPA////////////////////// */
+
+
+
+.mapa{
+    margin: 3em auto 1em;
+    text-align: center;
+}
+.mapa__title {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.mapa__title::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -.5em;
+    left: 0;
+    background-color: #005aae;
+    animation: underline-animation 5s ease forwards infinite;
+}
+
+@keyframes underline-animation {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+.mapa__title:hover::before {
+    animation: underline-animation 1s ease forwards;
+}
+.mapa__calles{
+    display: flex;
+    width: clamp(100px, 90%, 600px);
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.mapa__cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(100px, 75%, 380px);
+    margin: 1em auto 4em;
+    border-radius: .5em;
+    padding: .5em 0;
+    background-color: #005aae;
+    color: #fff;
+}
+
+
+/* ///////////// HORARIO DE ATENCION ///////////////// */
+
+.horarios{
+    text-align: center;
+    margin-bottom: 4em;
+}
+.horarios__dias{
+    margin: 0 0 .5em 0;
+    font-size: 1rem;
+    color: #012d5b;
+}
+.horarios__dias2{
+    margin-top: 1em;
+   
+    
+}
+.horarios__horas{
+    margin: 0;
+}
+
+
+/* ///////////// footer ////////////////// */
+
+.footer{
+    background-color: #012d5b;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-around;
+    width: clamp(100px, 90%, 800px);
+    margin: 0 auto;
+    padding: 1em 0 2em 0;
+}
+
+
+.footer__title{
+    color: #fff;
+    margin: 1em auto;
+    font-size: 1rem;
+}
+.footer__img{
+    width: 100px;
+    object-fit: contain;
+}
+.footer__social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__icon{
+    width: 35px;
+}
+.footer__icons{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content;
+    gap: 1em;
+}
+.footer__copy{
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+    font-weight: 200;
+    line-height: 1.3;
+}

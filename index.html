@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+    <script src="cache.js"></script>
+    <script src="main.js"></script>
+
+    <title>Pedidos</title>
+
+    <link rel="stylesheet" href="styles/style.css?v1">
+    <link rel="stylesheet" href="styles/normalize.css?v1">
+    <link rel="stylesheet" href="styles/mediaqueries.css?v1">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <h1 class="header__title">
+            <img class="header__logo" src="assets/imagenes/LOGO.webp" alt="">Haz tu pedido
+        </h1>
+
+
+    </header>
+
+    <main>
+
+
+
+
+
+
+        <!-- <section class="tutorial">
+            <button class="tutorial__btn">¿Como hago mi pedido?</button>
+            <div class="tutorial__overlay" id="tutorialOverlay">
+                <div class="tutorial__content">
+                   
+                    <img src="assets/imagenes/tutorial delivery.webp" alt="Tutorial Image">
+                    <button class="tutorial__close-btn" id="closeTutorial">Cerrar</button>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="categorias">
+
+            <h2 class="categorias__title">Elige la categoria</h2>
+
+            <div class="categoria">
+
+                <button id="todo" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconBEBIDAS.svg" alt="">Todo</button>
+                <button id="gaseosas" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconGASEOSA.svg" alt="">Gaseosas</button>
+                <button id="vinos" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconVINOS.svg" alt="">Vinos</button>
+                <button id="energizantes" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconENERGIZANTE.svg" alt="">Energizantes</button>
+                <button id="aguasoda" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconAguaSoda.svg" alt="">Agua/Soda</button>
+                <button id="fardo" class="categorias__button">
+                    <img class="categorias__img" src="assets/vectores/iconMAYORISTA.svg" alt="">Por Mayor</button>
+
+            </div>
+        </section>
+
+
+        <button class="carrito">Ver mi pedido
+            <img class="carrito__icon" src="assets/vectores/carrito.svg" alt="">
+        </button>
+
+
+
+        <section class="contenido">
+
+
+            <!-- ------------------- GASEOSAS --------------------- -->
+
+            <div class="comida" id="gaseosas">
+                <h4 class="comida__name">Gaseosa CocaCola 225cc</h4>
+                <p class="comida__precio">$3200</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/gaseosas/cocaCola225.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="gaseosas">
+                <h4 class="comida__name">Gaseosa DobleCola 225cc</h4>
+                <p class="comida__precio">$2200</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/gaseosas/DobleCola2l.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="gaseosas">
+                <h4 class="comida__name">Gaseosa Fanta Naranja 225cc</h4>
+                <p class="comida__precio">$2600</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/gaseosas/FantaNaranja.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="gaseosas">
+                <h4 class="comida__name">Gaseosa Sprite 225cc</h4>
+                <p class="comida__precio">$2400</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/gaseosas/Sprite225.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="gaseosas">
+                <h4 class="comida__name">Gaseosa Manaos Cola 225cc</h4>
+                <p class="comida__precio">$1800</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes//gaseosas/ManaosCola225.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="gaseosas">
+                <h4 class="comida__name">Gaseosa Seco Cola 225cc</h4>
+                <p class="comida__precio">$2000</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/gaseosas/SecoCola225.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+
+
+
+            <!-- ------------------- VINOS --------------------- -->
+
+
+
+            <div class="comida" id="vinos">
+                <h4 class="comida__name">Vino tinto Vieja Mendoza 3/4</h4>
+                <p class="comida__precio">$2900</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/vinos/viejaMendoza34.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="vinos">
+                <h4 class="comida__name">Vino blanco Dilema 750cc</h4>
+                <p class="comida__precio">$4150</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/vinos/VinoDilema.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="vinos">
+                <h4 class="comida__name">Vino tinto Dadá 750cc</h4>
+                <p class="comida__precio">$3400</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/vinos/viejadada750.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="vinos">
+                <h4 class="comida__name">Vino tinto Michael Torino 750cc</h4>
+                <p class="comida__precio">$2000</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/vinos/michaelTorino750.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+
+
+
+            <!-- ------------------- ENERGIZANTES --------------------- -->
+
+
+            <div class="comida" id="energizantes">
+                <h4 class="comida__name">Energizante Monster 250cc</h4>
+                <p class="comida__precio">$2150</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/energizantes/monster250cc.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="energizantes">
+                <h4 class="comida__name">Energizante RedBull 250cc</h4>
+                <p class="comida__precio">$2200</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/energizantes/redBull250cc.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="energizantes">
+                <h4 class="comida__name">Energizante Rockstar 250cc</h4>
+                <p class="comida__precio">$2000</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/energizantes/RockStar250cc.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="energizantes">
+                <h4 class="comida__name">Energizante Burn 250cc</h4>
+                <p class="comida__precio">$1900</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/energizantes/Burn250cc.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+
+            <!-- ------------------- AGUA SODA --------------------- -->
+
+            <div class="comida" id="aguasoda">
+                <h4 class="comida__name">Soda Ivess 2L</h4>
+                <p class="comida__precio">$1500</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/AguaSoda/sodaIvess2l.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="aguasoda">
+                <h4 class="comida__name">Soda Saldan 2L</h4>
+                <p class="comida__precio">$1200</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/AguaSoda/sodaSaldan2l.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="aguasoda">
+                <h4 class="comida__name">Agua mineral Benedictino 2L</h4>
+                <p class="comida__precio">$800</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/AguaSoda/AguaBenedictino2l.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="aguasoda">
+                <h4 class="comida__name">Agua Mineral Eco 2L</h4>
+                <p class="comida__precio">$900</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/AguaSoda/AguaEco2l.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+
+
+
+
+
+            <!-- --------------------------FARDOS ------------------------------- -->
+
+
+            <div class="comida" id="fardo">
+                <h4 class="comida__name">Vino Dilema Caja x6</h4>
+                <p class="comida__precio">$22400</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/cajas/CajaVinoDilema.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            <div class="comida" id="fardo">
+                <h4 class="comida__name">Gaseosa CocaCola fardo x6</h4>
+                <p class="comida__precio">$21200</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/cajas/CajacocaCola225.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            
+            <div class="comida" id="fardo">
+                <h4 class="comida__name">Soda Ivess fardo x6</h4>
+                <p class="comida__precio">$6300</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/cajas/CajasodaIvess2l.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+            
+            <div class="comida" id="fardo">
+                <h4 class="comida__name">Energizante RedBull pack x6</h4>
+                <p class="comida__precio">$10200</p>
+
+                <div class="comidas__container">
+                    <img class="comida__img" src="assets/imagenes/cajas/CajaredBull250cc.webp" alt="">
+
+                    <div class="comida__text">
+                        <p class="camida__pedido">Cuántas quieres?</p>
+                        <div class="input-container">
+                            <button class="comida__btn btn-decrement">-</button>
+                            <input class="comidas__inputNumber" type="number" min="0">
+                            <button class="comida__btn btn-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="comida__cta">Agregar a mi pedido</button>
+            </div>
+
+            <!-- ------------------------------------------------------- -->
+
+
+
+
+            
+        </section>
+
+        <button id="verMasBtn" class="ver-mas-btn">Ver más</button>
+
+
+        <section class="mapa">
+
+            <h4 class="mapa__title">¿Dónde estamos?</h4>
+
+            <iframe class="mapa__calles"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.8825761299886!2d-65.200211!3d-26.8118673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c250bf36aa5%3A0xc19791ff9fe3c5ec!2s25%20de%20Mayo%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1723106490273!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+
+            <a class="mapa__cta" href="https://maps.app.goo.gl/GUsc8GZbZ8CYexUn9">Ver ubicacion</a>
+
+        </section>
+
+
+        <div class="mensaje__popup">
+            <h3 class="mensaje__emergente">¡Pedido agregado!</h3>
+
+            <p class="mensaje__detalle">REVISA TU CARRITO</p>
+        </div>
+
+
+
+
+
+
+        <section class="pedido">
+            <button class="cerrar">Cerrar</button>
+            <h2>Detalle del Pedido</h2>
+            <div class="line"></div>
+            <div class="pedido__container">
+                <!-- Aquí se añadirán dinámicamente los pedidos -->
+            </div>
+            <p id="total" class="total__pedido">TOTAL: $0</p>
+
+            <!-- Primer botón para confirmar el pedido -->
+            <button class="pedido__confirmar" id="pedido__confirmar">Confirmar Pedido</button>
+
+
+            <!-- Nuevo lightbox para confirmación de pedido -->
+            <div id="nuevo-lightbox" class="nuevo-lightbox" style="display: none;">
+                <div class="lightbox-content">
+                    <span id="cerrar-lightbox" class="cerrar-lightbox">Cerrar</span>
+                    <h3 class="confirmacion__title">Elige tu opción</h3>
+                    <div id="lightboxDetalle" class="confirmacion-detalle-nuevo">
+                        <!-- Aquí se mostrarán dinámicamente los detalles del pedido -->
+                    </div>
+                    <button class="delivery">
+                        <img class="pedido__icon" src="assets/vectores/arrow.svg" alt="">
+                        Quiero envío de mi pedido</button>
+                    <div class="inputs__confirmacion">
+                        <div class="pedidoNumber">
+                            <label class="confirmacion__label" for="direccion-nuevo">Dirección Exacta</label>
+                            <input type="text" id="direccion-nuevo" name="direccion-nuevo"
+                                class="input__text input__text2" placeholder="direccion" required>
+                        </div>
+                        <div class="pedidoNumber">
+                            <label class="confirmacion__label" for="calles-nuevo">¿Entre qué calles?</label>
+                            <input type="text" id="calles-nuevo" name="calles-nuevo" class="input__text input__text2"
+                                placeholder="calles laterales?" required>
+                        </div>
+                        <div class="pedidoNumber">
+                            <label class="confirmacion__label" for="piso-nuevo">Piso</label>
+                            <input type="text" id="piso-nuevo" name="piso-nuevo" class="input__text input__text3">
+                        </div>
+
+
+                        <label for="nombre-nuevo">Tu Nombre</label>
+                        <input type="text" id="nombre-nuevo" name="nombre-nuevo" class="input__text"
+                            placeholder="quien recibe el pedido?" required>
+
+
+
+                        <label for="mensaje-nuevo">Mensaje Opcioncial</label>
+                        <textarea id="mensaje-nuevo" name="mensaje-nuevo" class="input__text" rows="4"
+                            placeholder="por ejemplo: el color de tu casa o en que horario te lo llevamos"></textarea>
+                        <button class="pedido__enviar" id="pedido__enviar-nuevo">Enviar Pedido</button>
+
+                    </div>
+                    <button class="house">
+                        <img class="pedido__icon" src="assets/vectores/arrow.svg" alt="">
+                        Lo retiro yo personalmente</button>
+                    <div class="retiroLOCAL">
+                        <label for="nombre-nuevo-2">Tu nombre completo</label>
+                        <input type="text" id="nombre-nuevo-2" name="nombre-nuevo-2" class="input__text"
+                            placeholder="quien retira el pedido?" required>
+
+                        <button class="pedido__enviar2" id="pedido__enviar-nuevo-local2">Confirmar (Retiro en
+                            Local)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="horarios">
+
+            <h4 class="horarios__title">Horarios Atención</h4>
+
+            <h5 class="horarios__dias">De lunes a Viernes</h5>
+            <p class="horarios__horas">de 09:00 a 13:00hs y de 17:00 a 20:30hs</p>
+
+            <h5 class="horarios__dias horarios__dias2">Sábados</h5>
+            <p class="horarios__horas">de 09:00 a 13:00hs</p>
+
+
+
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__content">
+
+        <img class="footer__img" src="assets/imagenes/logo.webp" alt="">
+
+        <div class="footer__social">
+            <h5 class="footer__title">Nuestras redes</h5>
+            <div class="footer__icons">
+                <img class="footer__icon" src="assets/imagenes/face.webp" alt="">
+                <img class="footer__icon" src="assets/imagenes/insta.webp" alt="">
+            </div>                   
+
+        </div>
+    </div>
+
+         <p class="footer__copy">© 2024 [Borcelle]. Todos los derechos reservados. Prohibida la reproducción total o parcial de cualquier contenido sin autorización. <br>
+            [C] Bebidas seleccionadas con pasión y dedicación. ¡Salud!</p> 
+
+     
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="javascript/script.js?v1"></script>
+</body>
+
+</html>
